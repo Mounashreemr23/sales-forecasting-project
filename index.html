@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecast Dashboard</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            background: #f4f7fb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f77b4;
+        }
+
+        #chart {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sales Forecast Dashboard</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Forecast</h3>
+            <p id="totalSales">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Monthly Sales</h3>
+            <p id="avgSales">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3>Highest Monthly Sales</h3>
+            <p id="maxSales">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3>Lowest Monthly Sales</h3>
+            <p id="minSales">Loading...</p>
+        </div>
+    </div>
+
+    <div id="chart"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
