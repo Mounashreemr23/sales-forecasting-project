@@ -178,7 +178,7 @@ The dashboard helps businesses:
 
 **Mounashree MR**
 
-BCA Student | Aspiring Data Analyst | Machine Learning Enthusiast
+MCA Student | Aspiring Data Analyst | Machine Learning Enthusiast
 
 ---
 
